@@ -3,7 +3,7 @@
 # The Ed-Fi Alliance licenses this file to you under the Apache License, Version 2.0.
 # See the LICENSE and NOTICES files in the project root for more information.
 
-name: Admin API E2E Tests + ODS 6
+name: Admin API E2E Tests + ODS 5.3
 
 on:
   push:
@@ -27,7 +27,7 @@ jobs:
         run: cp -r ../../eng/test-certs/ssl ./Docker
       - name: Run Admin API
         run: |
-          docker-compose -f './Compose/pgsql/compose-build-dev.yml' --env-file './E2E Tests/gh-action-setup/.automation.env' up -d
+          docker-compose -f './Compose/pgsql/compose-build-dev53.yml' --env-file './E2E Tests/gh-action-setup/.automation.env' up -d
       - name: Verify ODS Health
         run: |
           chmod +x './E2E Tests/gh-action-setup/inspect.sh'
