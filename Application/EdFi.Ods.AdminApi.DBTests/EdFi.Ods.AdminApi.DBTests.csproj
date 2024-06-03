@@ -11,7 +11,7 @@
     <PackageReference Include="EdFi.SecurityCompatiblity53.DataAccess" Version="5.4.0">
       <Aliases>Compatability</Aliases>
     </PackageReference>
-    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.1.5" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.1" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.5.0" />
     <PackageReference Include="Microsoft.SqlServer.SqlManagementObjects" Version="170.11.0" />
     <PackageReference Include="Moq" Version="4.17.2" />
